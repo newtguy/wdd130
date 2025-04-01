@@ -1,10 +1,16 @@
+:root {
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+    --text-color: black;
+}
+
 main {
     max-width: max-content;
 }
 
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 nav a {
@@ -20,7 +26,7 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -32,10 +38,10 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    border: var(--border);
+    padding: var(--padding);
     background-color: burlywood;
-    color: black;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -46,6 +52,6 @@ aside img {
 
 footer {
     margin-top: 10rem;
-    border-top: 1px solid black;
+    border-top: var(--border);
     text-align: center;
 }
