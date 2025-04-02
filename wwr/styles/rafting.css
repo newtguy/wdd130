@@ -25,13 +25,13 @@ footer {
     margin: 0 auto;
 }
 
-header .logo {
+header .logo_container {
     height: 100%;
     display: table;
     float: left;
 }
 
-header .logo div {
+header .logo_container .logo {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -43,7 +43,7 @@ header .logo img {
     padding-left: 20px;
 }
 
-nav {
+header nav {
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -51,7 +51,7 @@ nav {
     background-color: var(--accent2-color);
 }
 
-nav a {
+header nav a {
     display: block;
     text-decoration: none;
     letter-spacing: .5px;
@@ -201,13 +201,31 @@ section h2 {
 }
 
 footer {
+    height: 60px;
     border-top: 1px solid rgb(34 49 66 / 0.5);
 }
 
-.socials {
-    text-decoration: none;
+footer p {
+    font-weight: 800;
+    padding-top: 1rem;
+    padding-left: 12rem;
+    text-align: center;
 }
 
-.socials a img {
+footer .socials {
+    height: 100%;
+    display: table;
+    float: right;
+}
+
+footer .socials .icons {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer .socials .icons img {
     height: 40px;
+    margin-bottom: 0;
+    padding-right: 20px;
 }
