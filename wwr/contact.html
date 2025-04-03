@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <meta name="description" content="Nathan Shelley | WDD 130 | Contact">
+    <meta name="author" content="Nathan Shelley">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <div class="logo">
+                <img src="images/z-boat.png" alt="Rafting Logo">
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact_container">
+            <div class="contact_column1">
+                <h1>Contact Us</h1>
+                <div class="contact_box">
+                    <p><strong>Address</strong>: 2222 Lilly Pad Street</p>
+                    <p><strong>Phone</strong>: 222-222-2222</p>
+                    <p><strong>Email</strong>: support@rummyrafts.com</p>
+                </div>
+            </div>
+            <div class="contact_column2">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54684.82771871849!2d-112.20407883610928!3d41.034804512564534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8753195213e90aa9%3A0x5a659c7a09680ab5!2sPainted%20Bison%20Sculpture!5e0!3m2!1sen!2sus!4v1743705793044!5m2!1sen!2sus"
+                    width="236" height="177" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <h2 class="contact_title">Our Employees</h2>
+        <div id="employee_container">
+            <figure>
+                <img src="images/employee.png" alt="Employee Henry Jones">
+                <figcaption>Employee Henry Jones</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee.png" alt="Employee Tom Smith">
+                <figcaption>Employee Tom Smith</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee.png" alt="Employee Jack Lennord">
+                <figcaption>Employee Jack Lennord</figcaption>
+            </figure>
+        </div>
+
+        <h2 class="contact_title">Submission Form</h2>
+        <form id="contact_form_container">
+            <fieldset>
+                <div class="prompt_formatter">
+                    <label class="prompt" for="name">Name: </label><br>
+                </div>
+                <input class="response" type="text" id="name" name="name"><br>
+                <label class="prompt">Email: </label><br>
+                <input class="response" type="email" id="useremail" name="useremail"><br>
+
+                <div id="select_grid">
+                    <div class="select_items">
+                        <input type="radio" id="general" name="select">
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="select_items">
+                        <input type="radio" id="reservation" name="select">
+                        <label for="reservation">Reservation Questions</label>
+                    </div>
+                    <div class="select_items">
+                        <input type="radio" id="website" name="select">
+                        <label for="website">Website Suggestion</label>
+                    </div>
+                </div>
+
+                <div class="prompt_formatter">
+                    <label class="prompt" for="feedback">Message:</label>
+                </div>
+                <textarea class="response" id="feedback" name="feedback" rows="4" placeholder="Type  here"></textarea>
+
+                <input class="checkbox" type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+
+                <button id="contact_button" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <nav class="socials">
+            <div class="icons">
+                <a href="https.www.facebook.com">
+                    <img src="images/facebook-icon.webp" alt="Facebook">
+                </a>
+                <a href="https.www.x.com">
+                    <img src="images/x-icon.webp" alt="X">
+                </a>
+                <a href="https.www.instagram.com">
+                    <img src="images/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+        <p>©️ Rummy's Rafts | Nathan Shelley | <a id="wireframe"
+                href="https://app.moqups.com/CiAdWLjWqYRqwIpYayFJcNivNzh89qux/view/page/a57f5c842">Wireframe</a></p>
+    </footer>
+</body>
+
+</html>
