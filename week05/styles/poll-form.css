@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #E7E6F7;
+    --text-color: #233329;
+    --secondary-background-color: #FF6663;
+    --my-border: solid 1px rgb(23 33 39 / .5);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    border-bottom: var(--my-border);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+form {
+    width: 500px;
+    background-color: var(--secondary-background-color);
+    margin: 0 auto;
+    padding: 1rem;
+    border: var(--my-border);
+    display: grid;
+    color: var(--text-color);
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: 900;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+label {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+input,
+select,
+textarea {
+    padding: .5rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background-color: var(--background-color);
+}
+
+input[type="checkbox"] {
+    width: 29px;
+    height: auto;
+    vertical-align: bottom;
+    background-color: var(--background-color);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 1rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.browser-grid {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    grid-template-columns: 7fr 1fr 1fr;
+}
+
+.checkbox-grid {
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    grid-template-columns: 1.4fr 5fr .1fr 2.1fr;
+}
+
+.textbox-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fill-width {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+}
+
+.fill-width textarea {
+    width: 400px;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem;
+    font-weight: 800;
+}
+
+button:hover {
+    background-color: #C3C2D0;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    border-top: var(--my-border);
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: var(--text-color);
+}

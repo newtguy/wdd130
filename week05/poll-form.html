@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <meta name="description" content="Nathan Shelley | WDD 130 | User Poll Form">
+    <meta name="author" content="Nathan Shelley">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Nathan Shelley | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label class="column1" for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label class="column1" for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                <!--shorthand:
+                    <legend>Contact Info</legend>
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                    <label>Email: <input type="email" name="useremail"></label>
+                -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="browser-grid">
+                    <label>What is your favorite browser?</label>
+                    <select name="browsers" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">FireFox</option>
+                        <option value="edge">Edge</option>
+                    </select>
+                </div>
+                <div class="checkbox-grid">
+                    <div></div>
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="textbox-flex">
+                    <div class="fill-width">
+                        <label for="feedback">List the places you have lived.</label>
+                    </div>
+                    <div class="fill-width">
+                        <textarea id="feedback" name="feedback" rows="4"
+                            placeholder="Houson Texas, Provo Utah, Jacksonville Florida"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>©️2025 🛩️ HTML Form - User Poll Activity 🛩️ Nathan Shelley </p>
+    </footer>
+</body>
+
+</html>
