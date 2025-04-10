@@ -18,7 +18,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-/*Format header*/
+/*header*/
 header {
     height: 60px;
     background-color: var(--accent2-color);
@@ -102,7 +102,6 @@ h1 {
 
 h2 {
     font-weight: 800;
-    /*background-color: white;*/
     margin: 5px 20px;
 }
 
@@ -117,8 +116,115 @@ a {
     font-weight: 700;
 }
 
-/*About Us Page 
-Hero Image*/
+/*Home Page*/
+.home_adventure {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.home_invitation {
+    position: absolute;
+    bottom: 27rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.home_invitation p {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.home_invitation a {
+    padding: 1rem 2rem;
+    top: 1rem;
+    color: var(--secondary-color);
+    background-color: #470024;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.attractions_grid {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+.attractions_grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.primary {
+    width: 200px;
+    height: auto;
+    padding: 3px;
+    margin: 0;
+    background-color: var(--alt-background-color);
+    box-shadow: 5px 5px 3px gray;
+}
+
+.home_icon {
+    width: auto;
+    height: 150px;
+    padding: .5rem;
+}
+
+.finisher {
+    margin: 2rem 0;
+    width: 100%;
+    height: 29rem;
+    background-color: var(--alt-background-color);
+}
+
+.finisher img {
+    display: block;
+    padding: 2rem;
+    width: 600px;
+    height: auto;
+}
+
+.finisher div {
+    width: 25rem;
+    height: 18.75rem;
+    position: absolute;
+    left: 50%;
+    top: 78rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--accent2-color);
+}
+
+.finisher div h2 {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.finisher div p {
+    color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.finisher div a {
+    color: var(--primary-color);
+    background-color: var(--alt-background-color);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/*About Us Page */
 .hero {
     position: relative;
     margin-top: 1rem;
