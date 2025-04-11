@@ -78,7 +78,10 @@ p,
 a,
 figure,
 label,
-input {
+input,
+caption,
+th,
+td {
     font-family: "Fira Sans", sans-serif;
     font-style: normal;
 }
@@ -89,7 +92,10 @@ h2,
 p,
 figure,
 label,
-input {
+input,
+caption,
+th,
+td {
     color: var(--primary-color);
 }
 
@@ -100,7 +106,8 @@ h1 {
     padding: 15px 70px;
 }
 
-h2 {
+h2,
+caption {
     font-weight: 800;
     margin: 5px 20px;
 }
@@ -108,7 +115,9 @@ h2 {
 p,
 figure,
 label,
-input {
+input,
+th,
+td {
     font-weight: 400;
 }
 
@@ -222,6 +231,112 @@ a {
     padding: 1rem 2rem;
     border-radius: 25px;
     text-decoration: none;
+}
+
+/*Trips Page*/
+
+.featured_trips_grid {
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.featured_trips_grid figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured_trips_grid img {
+    width: 200px;
+    height: 200px;
+}
+
+.trip_hero {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.trip_hero img {
+    width: 100%;
+    height: 20rem;
+}
+
+.trip_hero div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 9rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.trip_hero p,
+.trip_hero h2 {
+    color: var(--accent2-color);
+    font-weight: 900;
+    padding: .3rem;
+}
+
+.reserve_button {
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    padding: 2rem 1rem;
+    border-radius: 25px;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.trip_description_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.trip_description_container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.trip_description_container img {
+    width: 400px;
+    height: auto;
+}
+
+table {
+    width: 70%;
+    height: auto;
+    border: var(--border);
+}
+
+thead {
+    background-color: var(--alt-background-color);
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#reserve_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: var(--border);
+    padding: 2rem 0;
 }
 
 /*About Us Page */

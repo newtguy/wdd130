@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips</title>
-    <meta name="description" content="Nathan Shelley | WDD 130 | Trips">
+    <meta name="description" content="Nathan Shelley | WDD 130 | Rummy's Rafts | Trips">
     <meta name="author" content="Nathan Shelley">
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +29,139 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-
     <main>
-        <div class="hero">
-            <img src="images/group-rafting.webp" alt="Group of People paddling on Raft." width="1024">
-            <h1>Rummy's Rafts</h1>
-            
+        <div class="featured_trips_grid">
+            <figure>
+                <img src="images/elk-river-square.webp" alt="Elk River Photo">
+                <figcaption>Elk River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wacky-river-square.webp" alt="Wacky River Photo">
+                <figcaption>Wacky River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/felix-river-square.webp" alt="Felix River Photo">
+                <figcaption>Felix River</figcaption>
+            </figure>
+            <figure>
+                <img src="images/day-trip-square.webp" alt="Day Trip Photo">
+                <figcaption>Day Trip</figcaption>
+            </figure>
+        </div>
+        <div class="trip_hero">
+            <img src="images/hero-firework-banner.webp" alt="Advertisement Banner">
+            <div>
+                <p>Party of 20 or more?</p>
+                <h2>Ongoing SALE. 30% OFF.</h2>
+                <a class="reserve_button" href="contact.html">Contact Us to Reserve</a>
+            </div>
         </div>
 
-    </main>
+        <div class="trip_description_container">
+            <div>
+                <h2>Elk River</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.</p>
+            </div>
+            <div>
+                <img src="images/elk-river-photo.webp" alt="Elk River Photo">
+            </div>
+        </div>
+        <div class="trip_description_container">
+            <div>
+                <h2>Wacky River</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.</p>
+            </div>
+            <div>
+                <img src="images/wacky-river-photo.webp" alt="Wacky River Photo">
+            </div>
+        </div>
+        <div class="trip_description_container">
+            <div>
+                <h2>Felix River</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.</p>
+            </div>
+            <div>
+                <img src="images/felix-river-photo.webp" alt="Felix River Photo">
+            </div>
+        </div>
+        <div class="trip_description_container">
+            <div>
+                <h2>Day Trip</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+                    mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+                    nec, mattis ac neque.</p>
+            </div>
+            <div>
+                <img src="images/day-trip-rafting.webp" alt="Day Trip Rafting Photo">
+            </div>
+        </div>
 
+        <div id="reserve_container">
+            <table>
+                <caption>
+                    Available Trips
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Elk River</th>
+                        <th>Wacky River</th>
+                        <th>Felix River</th>
+                        <th>Day Trip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Length:</th>
+                        <td>2 days</td>
+                        <td>3 days</td>
+                        <td>7 days</td>
+                        <td>1 day</td>
+                    </tr>
+                    <tr>
+                        <th>Food Provided?</th>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th>Guide Available?</th>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th>Price/Party:</th>
+                        <td>$400</td>
+                        <td>$500</td>
+                        <td>$800</td>
+                        <td>$300</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="reserve_button" href="contact.html">Reserve Now</a>
+        </div>
+    </main>
     <footer>
         <nav class="socials">
             <div class="icons">
@@ -53,7 +176,8 @@
                 </a>
             </div>
         </nav>
-        <p>©️ Rummy's Rafts | Nathan Shelley</p>
+        <p>©️ Rummy's Rafts | Nathan Shelley | <a id="trips_wireframe"
+                href="https://app.moqups.com/CiAdWLjWqYRqwIpYayFJcNivNzh89qux/view/page/a46a11d8e">Wireframe</a></p>
     </footer>
 </body>
 
